@@ -35,3 +35,4 @@
 
 # added by student
 .DS_Store
+/node_modules
