@@ -2,23 +2,21 @@
 
 <% content_for :title, "Books" %>
 
-<h1>Book Collection Main Page</h1>
+<h1>Main Page</h1>
 
 <h2>Book List</h2>
+<em>Click on show to show book details!</em>
+<p></p>
 <div id="books">
   <% @books.each do |book| %>
-    <%= render book %>
-    <p>
+    <!-- don't render whole book, just add title -->
+    <strong><%= book.title %></strong> :::
       <%= link_to "Show", book %> ///
-      <!-- 
-      <%= button_to "Destroy this book", book, method: :delete %>
-      -->
       <%= link_to "Edit", edit_book_path(book) %> /// 
       <%= link_to "Destroy", confirm_destroy_book_path(book), 
         style: "color: red;" %> 
-    </p>
+    <br>
   <% end %>
 </div>
-
-<h2>Other Options</h2>
+<br>
 <%= link_to "New book", new_book_path %>
