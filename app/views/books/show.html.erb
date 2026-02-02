@@ -3,8 +3,14 @@
 <%= render @book %>
 
 <div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
-
+  <p><%= link_to "Edit this book", edit_book_path(@book) %></p>
+  <p>
+    <%= link_to "Destroy this book", confirm_destroy_book_path(@book), 
+    style: "color: red;"%>
+  </p>
+  <p><%= link_to "Back to books", books_path %></p>
+  <!--
   <%= button_to "Destroy this book", @book, method: :delete %>
+  -->
+  
 </div>

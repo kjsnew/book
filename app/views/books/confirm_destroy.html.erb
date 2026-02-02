@@ -1,0 +1,4 @@
+<h1> WARNING </h1>
+<h1> Are you sure you want to destroy "<%= @book.title %>"?</h1>
+<%= button_to "Yes, destroy", @book, method: :delete %>
+<%= link_to "Cancel and Go Back to Books", books_path %>
