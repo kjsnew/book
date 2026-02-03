@@ -10,14 +10,14 @@
 Book.create!(
   [
     { title: "My Potato", author: "Charity Jones",
-    genre: "nonfiction", publish_date: "2000-09-25" },
+    price: 2.50, publish_date: "2000-09-25" },
     { title: "Knickerbocker", author: "Nyoo Yawk",
-    genre: "fiction", publish_date: "1998-01-01" },
+    price: 2.50, publish_date: "1998-01-01" },
     { title: "Moonie B Jones", author: "Courtney Love",
-    genre: "mystery", publish_date: "1984-02-28" },
+    price: 2.50, publish_date: "1984-02-28" },
     { title: "Hector's Bell", author: "Hector Salamanca",
-    genre: "biography", publish_date: "09-09-2009" },
+    price: 2.50, publish_date: "09-09-2009" },
     { title: "Final Destination", author: "Your Mind",
-    genre: "thriller", publish_date: "09-25-2001" }
+    price: 2.50, publish_date: "09-25-2001" }
   ]
 )
