@@ -7,3 +7,17 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Book.create!(
+  [
+    { title: "My Potato", author: "Charity Jones",
+    price: 2.50, publish_date: Date.today },
+    { title: "Knickerbocker", author: "Nyoo Yawk",
+    price: 2.50, publish_date: Date.today },
+    { title: "Moonie B Jones", author: "Courtney Love",
+    price: 2.50, publish_date: Date.today },
+    { title: "Hector's Bell", author: "Hector Salamanca",
+    price: 2.50, publish_date: Date.today },
+    { title: "Final Destination", author: "Your Mind",
+    price: 2.50, publish_date: Date.today }
+  ]
+)
